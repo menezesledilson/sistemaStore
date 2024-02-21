@@ -1,0 +1,12 @@
+company.store.view.CadastroCliente
+view.CadastroCliente$4
+view.CadastroCliente$5
+view.CadastroCliente
+company.store.view.CadastroCliente$5
+view.CadastroCliente$1
+company.store.view.CadastroCliente$4
+view.CadastroCliente$2
+company.store.view.CadastroCliente$3
+view.CadastroCliente$3
+company.store.view.CadastroCliente$2
+company.store.view.CadastroCliente$1
