@@ -1,5 +1,4 @@
-
-package  model;
+package model;
 
 import java.sql.Timestamp;
 
@@ -8,11 +7,13 @@ import java.sql.Timestamp;
  * @author Ledilson
  */
 public class Venda {
-    private  Long id; 
-    private  Timestamp datahora;
-    private  String descricao;
-    private String quantidade;
+
+    private Long id;
+    private Timestamp datahora;
+    private String descricao;
+    private Integer quantidade;
     private Double precoVenda;
+    private Double total;
 
     public Long getId() {
         return id;
@@ -38,11 +39,11 @@ public class Venda {
         this.descricao = descricao;
     }
 
-    public String getQuantidade() {
+    public Integer getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(String quantidade) {
+    public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
 
@@ -53,5 +54,14 @@ public class Venda {
     public void setPrecoVenda(Double precoVenda) {
         this.precoVenda = precoVenda;
     }
-    
+
+    public Double getTotal() {
+        return total;
+    }
+
+    public void setTotal(Double total) {
+        this.total = total;
+    }
+
+   
 }

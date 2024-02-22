@@ -257,7 +257,7 @@ private void desativarCampos() {
             PreparedStatement pstm;
             ResultSet rs;
 
-            pstm = con.prepareCall("SELECT id, datahora, descricao,quantidade,precounitario,porcentagem,precovenda From cadastroproduto;");
+            pstm = con.prepareCall("SELECT datahora, descricao,quantidade,precounitario,porcentagem,precovenda From cadastroproduto;");
             rs = pstm.executeQuery();
 
             NumberFormat currencyPrecoUnitario = NumberFormat.getCurrencyInstance();
@@ -271,7 +271,6 @@ private void desativarCampos() {
                 String dataHoraFormatada = formatoBrasileiro.format(dataHora);
 
                 modelo.addRow(new Object[]{
-                    //rs.getString("datahora"),
                     dataHoraFormatada,
                     rs.getString("descricao"),
                     rs.getString("quantidade"),
